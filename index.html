@@ -1,0 +1,311 @@
+﻿ <!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dk Digital Services Rewa | Best Digital Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background-color: #0b0f19;
+            color: #f8f9fa;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #111827, #1f2937);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 2px solid #00df89;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #00df89;
+            text-shadow: 0 0 15px rgba(0, 223, 137, 0.3);
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            color: #9ca3af;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: #ffffff;
+            font-size: 2rem;
+        }
+        .section-title span {
+            color: #00df89;
+        }
+        
+        /* Offer Banner */
+        .offer-banner {
+            background: linear-gradient(135deg, #ef4444, #b91c1c);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+        .service-card {
+            background: #1f2937;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #374151;
+            transition: all 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: #00df89;
+            box-shadow: 0 10px 25px rgba(0, 223, 137, 0.1);
+        }
+        .service-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .service-card h3 {
+            color: #ffffff;
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+        .service-card p {
+            color: #9ca3af;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #00df89;
+            background: rgba(0, 223, 137, 0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        /* Portfolio Gallery */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+        .portfolio-item {
+            background: #1f2937;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #374151;
+            text-align: center;
+        }
+        .portfolio-img {
+            width: 100%;
+            height: 200px;
+            background: #2d3748;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            font-weight: bold;
+        }
+        .portfolio-info {
+            padding: 15px;
+        }
+        .portfolio-info h4 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        .portfolio-info p {
+            color: #00df89;
+            font-size: 0.9rem;
+        }
+
+        /* Contact & Info Box */
+        .info-box {
+            background: #111827;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #374151;
+            margin-bottom: 40px;
+        }
+        .info-box h2 {
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        .info-box .address {
+            color: #9ca3af;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+        
+        /* Buttons */
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            color: white;
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+        .btn-whatsapp:hover {
+            background-color: #1ebe57;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        }
+        .btn-call {
+            background-color: #1d4ed8;
+            box-shadow: 0 4px 15px rgba(29, 78, 216, 0.3);
+        }
+        .btn-call:hover {
+            background-color: #1e40af;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(29, 78, 216, 0.5);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: #6b7280;
+            font-size: 0.9rem;
+            border-top: 1px solid #374151;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Dk Digital Services</h1>
+        <p>रीवा की सबसे भरोसेमंद डिजिटल एजेंसी - आपके बिजनेस को ऑनलाइन ब्रांड बनाने के लिए</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- 🔥 Special Offer Banner -->
+        <div class="offer-banner">
+            🚀 स्पेशल ऑफर: इस महीने सभी वेब डेवलपमेंट और रील्स/शॉर्ट्स मार्केटिंग पर सीधे 20% की छूट!
+        </div>
+
+        <!-- Services Section -->
+        <h2 class="section-title">हमारी सेवाएँ और <span>प्राइज लिस्ट</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon">🎨</div>
+                <h3>ग्राफिक डिजाइनिंग</h3>
+                <p>प्रोफेशनल लोगो, सोशल मीडिया पोस्ट, बैनर और ब्रांडिंग डिज़ाइन।</p>
+                <div class="price">₹199 से शुरू</div>
+            </div>
+            <div class="service-card">
+                <div class="icon">🎬</div>
+                <h3>Reels & Shorts Editing</h3>
+                <p>Instagram Reels, Facebook Reels और YouTube Shorts की कड़क और वायरल एडिटिंग।</p>
+                <div class="price">₹499 से शुरू</div>
+            </div>
+            <div class="service-card">
+                <div class="icon">📱</div>
+                <h3>सोशल मीडिया मार्केटिंग</h3>
+                <p>फेसबुक, इंस्टाग्राम और गूगल एड्स के जरिए कस्टमर्स और सेल्स बढ़ाएं।</p>
+                <div class="price">₹2,999 / महीना</div>
+            </div>
+            <div class="service-card">
+                <div class="icon">🌐</div>
+                <h3>वेबसाइट डेवलपमेंट</h3>
+                <p>आपके बिजनेस के लिए सुंदर, फास्ट और मोबाइल फ्रेंडली लैंडिंग पेज।</p>
+                <div class="price">₹4,999 से शुरू</div>
+            </div>
+        </div>
+
+        <!-- 📂 Portfolio Section -->
+        <h2 class="section-title">हमारा पिछला <span>काम (Portfolio)</span></h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-img">[ 🌐 वेबसाइट डिज़ाइन ]</div>
+                <div class="portfolio-info">
+                    <h4>लोकल किराना ई-कॉमर्स</h4>
+                    <p>वेबसाइट डेवलपमेंट</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">[ 🎨 सोशल मीडिया बैनर ]</div>
+                <div class="portfolio-info">
+                    <h4>रेस्टोरेंट फेस्टिव पोस्ट</h4>
+                    <p>ग्राफिक डिजाइनिंग</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">[ 🎬 Reels & Shorts ]</div>
+                <div class="portfolio-info">
+                    <h4>Instagram, Facebook & YouTube Reels</h4>
+                    <p>वायरल वीडियो एडिटिंग</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact/CTA Section -->
+        <div class="info-box">
+            <h2>📍 हमसे संपर्क करें</h2>
+            <p class="address"><strong>पता:</strong> रीवा, मध्य प्रदेश (Rewa, Madhya Pradesh - 486001)</p>
+            <p style="color: #9ca3af; margin-bottom: 25px;">क्या आप अपने बिजनेस को ऑनलाइन ले जाने के लिए तैयार हैं? नीचे दिए गए बटन पर क्लिक करें!</p>
+            
+            <div class="btn-container">
+                <a href="https://wa.me्ते%20Dk%20Digital%20Services,%20मुझे%20ऑफर%20के%20साथ%20सर्विस%20शुरू%20करवानी%20है।" target="_blank" class="btn btn-whatsapp">
+                    💬 WhatsApp पर चैट करें
+                </a>
+                <a href="tel:+919752109012" class="btn btn-call">
+                    📞 सीधे कॉल करें
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Dk Digital Services Rewa. सर्वाधिकार सुरक्षित।</p>
+    </footer>
+
+</body>
+</html>
